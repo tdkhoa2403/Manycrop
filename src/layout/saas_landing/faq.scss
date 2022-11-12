@@ -1,0 +1,143 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+
+
+.saas-faq {
+    padding: 4.8rem 0;
+    background-color: $bg-color;
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4.8rem 15px;
+        @media screen and (min-width: 576px) {
+            max-width: 520px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1200px;
+        }
+        .title-content {
+            margin-bottom: 4.8rem;
+            .title {
+                margin-bottom: 4.8rem;
+                color: #eee;
+                @media screen and (max-width: 768px) {
+                    font-size: 32px;
+                    line-height: 40px;
+                }
+            }
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            padding-top: 1.6rem;
+            .left {
+                padding-right: 4.8rem;
+                width: 50%;
+                padding-left: 15px;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                    padding: 0 15px;
+                    margin-bottom: 50px;
+                }
+                .accordion-faq {
+                    .accordion-item {
+                        border-bottom: none;
+                        &:first-child button {
+                            color: $primary-color;
+                        }
+                        &:first-child div{
+                            display: block;
+                        }
+                        .accordion-btn {
+                            color: $white-color;
+                            position: relative;
+                            text-align: left;
+                            width: 100%;
+                            padding: 1em 0;
+                            font-size: 1.15rem;
+                            font-weight: 400;
+                            border: none;
+                            background: none;
+                            outline: none;
+                            cursor: pointer;
+                            overflow: visible;
+                            padding: 2rem 3rem 2rem 0;
+                            display: flex;
+                            justify-content: space-between;
+                            transition: all .3s;
+                            .title {
+                                font-weight: 600;
+                                font-size: 2rem;
+                                line-height: 28px;
+                                outline: none;
+                                text-align: left;
+                                cursor: pointer;
+                            }
+                            .icon {
+                                display: inline-block;
+                                position: absolute;
+                                top: 18px;
+                                right: 0;
+                                width: 22px;
+                                height: 22px;
+                                border: 1px solid;
+                                border-radius: 22px;
+                                font-size: 1.2rem;
+                                font-weight: 600;
+                                @include flex($justify: center)
+                            }
+                            &:hover {
+                                color: $primary-color !important;
+                            }
+                        }
+                        .accordion-content {
+                            display: none;
+                            p {
+                                transition: all .5s;
+                                margin: 1.6rem 0;
+                                font-size: calc($fz-text + 4px);
+                                line-height: 28px;
+                                color: $text-color;
+                                padding-right: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .right {
+                padding-left: 4.8rem;
+                width: 50%;
+                padding-right: 15px;
+                @media screen and (max-width: 992px) {
+                    width: 100%;
+                }
+                @media screen and (max-width: 768px) {
+                    padding: 0 15px;
+                }
+                img {
+                    border-radius: 6px;
+                    max-width: 100%;
+                    height: auto;
+                    vertical-align: middle;
+                    border-style: none;
+                }
+            }
+        }
+    }
+}

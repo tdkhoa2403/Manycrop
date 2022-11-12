@@ -1,0 +1,121 @@
+@import "../base/";
+@import "../helpers/";
+
+
+.box-modal.open {
+    display: block;
+}
+.box-modal.close {
+    animation: modalFadeOut ease-in .3s;
+}
+.box-modal {
+    position: fixed;
+    max-width: 400px;
+    width: 400px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background: $bg-color;
+    z-index: 999;
+    padding: 8rem 3.2rem;
+    box-shadow: 0 15px 40px -5px rgb(0 0 0 / 26%);
+    display: none;
+    animation: modalFadeIn ease-out .3s;
+    @media screen and (max-width: 992px) {
+        min-height: 110vh;
+        top: -85px;
+        right: 0;
+    }
+    .btn-close {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        cursor: pointer;
+        z-index: 999;
+        font-size: 2rem;
+    }
+    .content {
+        text-align: left;
+        .search-area {
+            padding-top: 4.8rem;
+            margin-bottom: 4.8rem;
+            .search-box {
+                input[type="search"] {
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;  
+                    color: $text-color;
+                    border: none;
+                    height: 60px;
+                    background: #272727;
+                    padding: 0 20px;
+                    width: 100%;
+                    border: 1px solid rgba(255, 255, 255, 0.1);
+                    border-radius: 6px;
+                }
+                button.btn-search {
+                    display: block;
+                    width: 100%;
+                    padding: 10px 30px;
+                    font-size: 17px;
+                    line-height: 30px;
+                    font-weight: 600;
+                    transition: 0.3s ease-in;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    margin-top: 1.6rem;
+                    color: #fff;
+                    background-color: $primary-color;
+                    border-color: $primary-color;
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+        .follow-us {
+            margin-bottom: 4.8rem;
+            .socials-icon li a i {
+                margin-right: 10px;
+                color: $primary-color;
+                display: inline-block;
+                text-align: center;
+                font-size: 14px;
+                width: 38px;
+                height: 38px;
+                line-height: 36px;
+                border-radius: 50%;
+                transition: 0.3s;
+                border: 1px solid $primary-color;
+                &:hover {
+                    color: $white-color;
+                    background-color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes modalFadeOut {
+    from {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+}

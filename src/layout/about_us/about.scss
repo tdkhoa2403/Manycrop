@@ -1,0 +1,112 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+.ab_banner {
+    background-color: $bg-color;
+    padding: 7.2rem 0;
+    margin-top: 80px;
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        @media screen and (min-width: 576px) {
+            max-width: 540px;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 720px;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 960px;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1140px;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1200px;
+        }
+        .ab_img-top {
+            margin-bottom: 2.4rem;
+            .ab_img {
+                border-radius: $boder-radius;
+                max-width: 100%;
+                height: auto;
+            }
+            @media screen and (min-width: 992px) {
+            margin-bottom: 4.8rem;
+            }
+        }
+        .ab_content-bottom {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            text-align: left;
+            .left {
+                max-width: 750px;
+                align-self: center;
+                padding: 0 15px;
+                .sub-title {
+                    margin-bottom: .8rem;
+                }
+                .title {
+                    color: #eee;
+                    @media screen and (max-width: 1080px) {
+                        font-size: 32px;
+                        line-height: 40px;
+                    }
+                    @media screen and (max-width: 600px) {
+                        font-size: 30px;
+                        line-height: 38px;
+                    }
+                }
+                .ab_banner-btn {
+                    a {
+                        margin-top: 2.4rem;
+                        @media screen and (min-width: 992px) {
+                            margin-top: 4.8rem;
+                        }
+                        @media screen and (max-width: 600px) {
+                            width: 100%;
+                            display: block;
+                        }
+                    }
+                    .read-more {
+                        margin-right: .8rem;
+                        color: $white-color;
+                        background-color: $primary-color;
+                        border-color: $primary-color;
+                        &:hover {
+                            opacity: .8;
+                        }
+                    }
+                    .contact {
+                        color: $primary-color;
+                        border-color: $primary-color;
+                        &:hover {
+                            color: $white-color;
+                            background-color: $primary-color;
+                        }
+                    }
+                }
+                @media screen and (min-width: 992px) {
+                    flex: 0 0 50%;
+                }
+            }
+            .right {
+                text-align: left;
+                margin-top: 45px;
+                padding: 0 15px;
+                .text {
+                    font-size: calc($fz-text + 4px);
+                    line-height: 28px;
+                    color: $text-color;
+                }
+                @media screen and (min-width: 992px) {
+                    flex: 0 0 50%;
+                    padding-left: 4.8rem;
+                }
+            }
+        }
+    }
+}

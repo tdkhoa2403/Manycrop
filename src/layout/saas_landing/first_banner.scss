@@ -1,0 +1,96 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+.banner-slider-1 {
+    margin-top: 80px;
+    background-color: $saas-primary;
+    position: relative;
+    padding-bottom: 192px;
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        .banner-info {
+            padding: 8rem 0;
+            max-width: 550px;
+            margin: 0 auto;
+            &__title {
+                font-size: 46px;
+                line-height: 56px;
+                color: $white-color;
+                margin-bottom: 14px;
+                font-weight: 700;
+                @media screen and (max-width: 800px) {
+                    font-size: 30px;
+                    line-height: 40px;
+                }
+            }
+            &__desc {
+                padding-top: 10px;
+                .text {
+                    font-size: calc($fz-text + 4px);
+                    color: $white-color;
+                    font-weight: normal;
+                    line-height: 26px;
+                }
+                .banner-info-link {
+                    padding: 10px 30px;
+                    font-size: $fz-button;
+                    line-height: 30px;
+                    font-weight: 600;
+                    transition: 0.3s ease-in;
+                    border: 1px solid transparent;
+                    background-color: transparent;
+                    border-radius: 6px;
+                    cursor: pointer;
+                    margin-top: 4.8rem;
+                    color: #f8f9fa;
+                    border-color: #f8f9fa;
+                    text-align: center;
+                    display: inline-block;
+                    i {
+                        font-size: $fz-text;
+                        margin-left: 5px;
+                    }
+                    &:hover {
+                        background-color: $white-color;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+        .banner-screen {
+            position: absolute;
+            z-index: 99;
+            bottom: -62%;
+            margin: 0 auto;
+            left: 0;
+            text-align: center;
+            right: 0;
+            max-width: 1000px;
+            .banner-img {
+                max-width: 100%;
+                height: auto;
+                vertical-align: middle;
+                border-style: none;
+            }
+            @media screen and (max-width: 992px) {
+                bottom: -35%;
+            }
+            @media screen and (max-width: 720px) {
+                bottom: -45%;
+            }
+            @media screen and (max-width: 576px) {
+                bottom: -32%;
+            }
+        }
+    }
+}
+.space-section {
+    height: 24rem;
+    background-color: $bg-color;
+    @media screen and (max-width: 992px) {
+        height: 10rem;
+    }
+}

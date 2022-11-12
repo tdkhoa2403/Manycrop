@@ -1,0 +1,93 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+
+
+.project {
+    padding: 4.8rem;
+    background-color: #272727;
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+        @media screen and (min-width: 576px) {
+            max-width: 540px;
+            padding: 2.4rem 0;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 720px;
+            padding: 4.8rem 0;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1200px;
+        }
+        .content {
+            @include flex($justify: flex-start);
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            .left {
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                color: $white-color;
+                .title {
+                    @media screen and (max-width: 1080px) {
+                        font-size: 32px;
+                        list-style: 40px;
+                    }
+                }
+                .text {
+                    margin-top: 1.6rem;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $text-color;
+                    @media screen and (min-width: 992px) {
+                        padding-right: 4.8rem;
+                    }
+                }
+                @media screen and (min-width: 992px) {
+                    flex: 0 0 66.66667%;
+                    max-width: 66.66667%;
+                }
+            }
+            .right {
+                align-self: center;
+                padding: 0 15px;
+                @media screen and (min-width: 992px) {
+                    text-align: right;
+                    flex: 0 0 33.33333%;
+                    max-width: 33.33333%;
+                    position: relative;
+                    width: 100%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                }
+                .btn-project {
+                    color: $white-color;
+                    background-color: $primary-color;
+                    border-color: $primary-color;
+                    margin-top: 2.4rem;
+                    @media screen and (min-width: 768px) {
+                        margin-top: 4.8rem;
+                    }
+                    @media screen and (min-width: 992px) {
+                        margin-top: 0;
+                    }
+                    &:hover {
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+
+.contact-map {
+    background-color: $bg-color;
+    .container {
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+        @media screen and (min-width: 576px) {
+            max-width: 540px;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 720px;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1200px;
+        }
+        .map {
+            @media screen and (min-width: 992px) {
+                padding-top: 1.6rem;
+            }
+            iframe {
+                border: none;
+                width: 100%;
+                min-height: 400px;
+                display: block;
+                filter: grayscale(100%);
+                border-radius: 6px;
+            }
+        }
+    }
+}

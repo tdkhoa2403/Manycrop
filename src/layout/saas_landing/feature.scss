@@ -1,0 +1,166 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+
+.saas-feature {
+    padding-top: 6.4rem;
+    padding-bottom: 4.8rem;
+    background-color: #272727;
+    .content-main {
+        padding: 4.8rem 0;
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+            @media screen and (min-width: 576px) {
+                max-width: 540px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 768px) {
+                max-width: 720px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 992px) {
+                max-width: 960px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 1200) {
+                max-width: 1140px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 1280) {
+                max-width: 1200px;
+            }
+            .content-info {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -15px;
+                @media screen and (max-width: 600px) {
+                    padding: 0 15px;
+                }
+                .content-left {
+                    padding-right: 4.8rem;
+                    max-width: 50%;
+                    padding-left: 15px;
+                    @media screen and (max-width: 992px) {
+                        max-width: 100%;
+                    }
+                    @media screen and (max-width: 600px) {
+                        padding: 0 15px;
+                    }
+                    .sub-title {
+                        margin-bottom: 0.8rem;
+                    }
+                    .title {
+                        margin-bottom: 2.4rem;
+                        color: #eee;
+                    }
+                    .text {
+                        font-size: calc($fz-text + 4px);
+                        line-height: 28px;
+                        margin-top: 1.6rem;
+                        color: $text-color;
+                    }
+                    .feature-btn {
+                        .btn {
+                            padding: 10px 30px;
+                            font-size: $fz-button;
+                            line-height: 30px;
+                            font-weight: 600;
+                            transition: .3s ease-in;
+                            border-radius: 6px;
+                            cursor: pointer;
+                            margin-top: 4.8rem;
+                            display: inline-block;
+                            border: 1px solid transparent;
+                            color: $white-color;
+                            background-color: $primary-color;
+                            border-color: $primary-color;
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                            @media screen and (max-width: 992px) {
+                                margin-top: 2.4rem;
+                            }
+                            @media screen and (max-width: 600px) {
+                                width: 100%;
+                                text-align: center;
+                            }
+                        }
+                        .contact {
+                            background-color: transparent;
+                            color: $primary-color;
+                            margin-left: 10px;
+                            @media screen and (max-width: 600px) {
+                                margin-left: 0;
+                            }
+                            &:hover {
+                                background-color: $primary-color;
+                                color: $white-color;
+                                opacity: 1;
+                            }
+                        }
+                        i {
+                            font-size: 14px;
+                            margin-left: 5px;
+                        }
+                    }
+                }
+                .content-right {
+                    align-self: center;
+                    max-width: 50%;
+                    padding: 15px;
+                    @media screen and (max-width: 992px) {
+                        max-width: 100%;
+                        padding: 0 15px;
+                        margin-top: 4.8rem;
+                    }
+                    &-grids {
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin: 0 -15px;
+                        margin-bottom: 4.8rem;
+                        &:nth-child(3) {
+                            margin-bottom: 0;
+                        }
+                        .icon {
+                            max-width: 16.66667%;
+                            padding: 0 15px;
+                            i {
+                                font-size: 30px;
+                                text-align: center;
+                                margin-top: 4px;
+                                vertical-align: super;
+                                color: $primary-color;
+                            }
+                        }
+                        .content {
+                            max-width: 83.33333%;
+                            padding: 0 15px;
+                            .title {
+                                margin: 0px 0 12px 0;
+                                color: #eee;
+                                font-size: 1.6rem;
+                                line-height: 1.2;
+                                a {
+                                    font-size: 24px;
+                                    margin-bottom: 16px;
+                                    color: #eee;
+                                    &:hover {
+                                        color: $primary-color;
+                                    }
+                                }
+                            }
+                            .text {
+                                font-size: calc($fz-text + 4px);
+                                line-height: 28px;
+                                color: $text-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

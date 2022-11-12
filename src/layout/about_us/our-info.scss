@@ -1,0 +1,128 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+
+.our-info {
+    padding: 4.8rem 0;
+    background-color: #272727;
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+        @media screen and (min-width: 576px) {
+            max-width: 540px;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 720px;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 960px;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1140px;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1200px;
+        }
+        .content {
+            padding:  4.8rem 0;
+            .blog-sec {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -15px;
+                .blog-info {
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    margin-bottom: 2.4rem;
+                    @media screen and (min-width: 768px) {
+                        margin-bottom: 4.8rem;
+                    }
+                    @media screen and (min-width: 992px) {
+                        padding-right: 4.8rem;
+                        margin-bottom: 0;
+                        flex: 0 0 33.33333%;
+                        max-width: 33.33333%;
+                    }
+                    .title {
+                        color: #eee;
+                        @media screen and (max-width: 1080px) {
+                            font-size: 32px;
+                            line-height: 40px;
+                        }
+                    }
+                    .author-info {
+                        display: grid;
+                        grid-template-columns: 100px 150px;
+                        grid-gap: 20px;
+                        align-items: center;
+                        margin-top: 2.4rem;
+                        .author-img {
+                            width: 100px;
+                            height: 100px;
+                            display: inline-block;
+                            overflow: hidden;
+                            border-radius: 50%;
+                            img {
+                                width: 100%;
+                                min-height: 100%;
+                                object-fit: cover;
+                                object-position: center;
+                            }
+                        }
+                        .signature {
+                            max-width: 100%;
+                            height: auto;
+                            vertical-align: middle;
+                            border-style: none;
+                        }
+                    }
+                }
+                .blog-post {
+                    text-align: left;
+                    padding: 0 15px;
+                    @media screen and (max-width: 768px) {
+                        margin-top: 50px;
+                    }
+                    a {
+                        display: block;
+                        img {
+                            max-width: 100%;
+                            height: auto;
+                            transition: .3s ease-in-out;
+                            &:hover {
+                                overflow: hidden;
+                                transform: scale(1.1);
+                                transition: .3s ease-in-out;
+                                border-radius: $boder-radius;
+                            }
+                        }
+                    }
+                    @media screen and (min-width: 768px) {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    @media screen and (min-width: 992px) {
+                        flex: 0 0 33.33333%;
+                        max-width: 33.33333%;
+                    }
+                    .blog-desc {
+                        margin-top: 2.4rem;
+                        .card-title {
+                            margin-top: 2.4rem;
+                            margin-bottom: 1.2rem;
+                            color: #eee;
+                            font-size: 2rem;
+                            line-height: 1.2;
+                        }
+                        .card-text {
+                            line-height: 26px;
+                            font-size: calc($fz-text + 4px);
+                            color: $text-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

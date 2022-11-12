@@ -1,0 +1,191 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+
+
+.blog {
+    padding: 4.8rem 0;
+    background-color: #272727;
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4.8rem 15px;
+        @media screen and (min-width: 576px) {
+            max-width: 520px;
+            margin: 0 auto;
+            padding: 0 15px;
+            padding-bottom: 3.2rem;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1200px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            .blog-post {
+                padding-right: 4.8rem;
+                max-width: calc(100% / 3);
+                padding-left: 15px;
+                @media screen and (max-width: 992px) {
+                    max-width: 100%;
+                    margin-bottom: 50px;
+                }
+                .title {
+                    color: #eee;
+                    @media screen and (max-width:1080px) {
+                        font-size: 32px;
+                        line-height: 40px;
+                    }
+                }
+                .text {
+                    margin-top: 2.4rem;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $text-color;
+                }
+                .author-info {
+                    display: grid;
+                    grid-template-columns: 100px 150px;
+                    grid-gap: 20px;
+                    align-items: center;
+                    margin-top: 2.4rem;
+                    .author-img {
+                        width: 100px;
+                        height: 100px;
+                        display: inline-block;
+                        overflow: hidden;
+                        border-radius: 50%;
+                        img {
+                            width: 100%;
+                            min-height: 100%;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                    .signature {
+                        max-width: 100%;
+                        height: auto;
+                        vertical-align: middle;
+                        border-style: none;
+                    }
+                }
+            }
+            .blog-info {
+                text-align: left;
+                max-width: calc(100% / 3);
+                padding: 0 15px;
+                @media screen and (max-width: 992px) {
+                    max-width: calc(100% / 2);
+                }
+                @media screen and (max-width: 768px) {
+                    max-width: 100%;
+                    margin-bottom: 50px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+                .card {
+                    border: none;
+                    background: none;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    min-width: 0;
+                    word-wrap: break-word;
+                    border-radius: 4px;
+                    &>a {
+                        overflow: hidden;
+                        border-radius: 6px;
+                        display: block;
+                        color: $primary-color;
+                        background-color: transparent;
+                        img {
+                            transition: .3s ease-in-out;
+                            max-width: 100%;
+                            height: auto;
+                            vertical-align: middle;
+                            border-style: none;
+                            &:hover {
+                                overflow: hidden;
+                                transform: scale(1.1);
+                                transition: 0.3s ease-in-out;
+                                border-radius: 6px;
+                            }
+                        }
+                    }
+                    .desc {
+                        margin-top: 2.4rem;
+                        text-align: left;
+                        .title {
+                            margin-bottom: 0.8rem;
+                            color: #eee;
+                            font-size: 2rem;
+                            line-height: 1.2;
+                            a {
+                                color: #eee;
+                                font-size: 22px;
+                                line-height: 30px;
+                                font-weight: 600;
+                                position: relative;
+                                display: block;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                &:hover {
+                                    color: $primary-color;
+                                }
+                            }
+                        }
+                        .admin-post {
+                            margin-bottom: 1.6rem;
+                            li {
+                                margin-right: 15px;
+                                &:last-child i{
+                                    margin-right: 10px;
+                                }
+                                i {
+                                    width: 15px;
+                                    vertical-align: .5px;
+                                    color: $primary-color;
+                                    margin-right: 4px;
+                                    font-size: $fz-button;
+                                }
+                                a {
+                                    color: $text-color;
+                                    font-size: calc($fz-text + 2px);
+                                    &:hover {
+                                        color: $primary-color;
+                                    }
+                                }
+                                p {
+                                    color: $text-color;
+                                    font-size: calc($fz-text + 2px);
+                                    line-height: 28px;
+                                }
+                            }
+                        }
+                        .text {
+                            line-height: 26px;
+                            font-size: calc($fz-text + 4px);
+                            color: $text-color;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

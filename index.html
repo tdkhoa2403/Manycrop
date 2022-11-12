@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./fonts/fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="stylesheet" href="./fonts/themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./dist/style.css">
+    <title>ManyCorp</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header id="site-header" class="fixed-top">
+            <nav class="navbar">
+                <a href="index.html" class="navbar-brand" id="navbar-brand">ManyCorp.</a>
+                <label for="navbar-toggle" class="navbar-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+                <input type="checkbox" name="" id="navbar-toggle">
+                <div class="navbar-collapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown-demo">
+                            <label for="dropdown-toggle-demo" class="dropdown-toggle-demo js-dropdown-toggle">
+                                Demos
+                                <i class="fa-solid fa-angle-down angle-down"></i>
+                            </label>
+                            <input type="checkbox" id="dropdown-toggle-demo">
+                            <div class="dropdown-menu demo">
+                                <a href="#" class="dropdown-item">Modern Agency</a>
+                                <a href="#" class="dropdown-item">SEO Marketing</a>
+                                <a href="./index.html" class="dropdown-item">Saas Landing</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./src/pages/about.html" class="nav-link">About Us</a>
+                        </li>
+                        <li class="nav-item dropdown-page">
+                            <label for="dropdown-toggle-page" class="dropdown-toggle-page js-dropdown-toggle">
+                                Pages
+                                <i class="fa-solid fa-angle-down angle-down"></i>
+                            </label>
+                            <input type="checkbox" id="dropdown-toggle-page">
+                            <div class="dropdown-menu page">
+                                <a href="./src/pages/services.html" class="dropdown-item">Services</a>
+                                <a href="#" class="dropdown-item">Blog Posts</a>
+                                <a href="#" class="dropdown-item">Blog Single</a>
+                                <a href="#" class="dropdown-item">Elements</a>
+                                <a href="#" class="dropdown-item">Email Page</a>
+                                <a href="#" class="dropdown-item">404 error page</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="./src/pages/contact.html" class="nav-link">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="search-right">
+                                <button class="menu-open js-menu-open">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                </button>
+                                <div class="box-modal js-modal">
+                                    <div class="btn-close js-btn-close">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </div>
+                                    <div class="content">
+                                        <div class="search-area">
+                                            <h3 class="title-side">Search Here</h3>
+                                            <form action="#" method="post" class="search-box">
+                                                <input type="search" name="search" id="#" placeholder="Keyword" required="required" autofocus>
+                                                <button type="submit" class="btn btn-search">Search</button>
+                                            </form>
+                                        </div>
+                                        <div class="follow-us">
+                                            <h3 class="title-side">Follow Us</h3>
+                                            <ul class="socials-icon">
+                                                <li><a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                                                <li><a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                                <li><a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                                <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="quote-btn btn" id="btn-primary">
+                                Get a Quote
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="theme-switch-wrapper">
+                    <i class="fa-solid fa-sun"></i>
+                </div>
+            </nav>
+        </header>
+        <!-- Banner -->
+        <section class="banner-slider-1 first-banner">
+            <div class="container">
+                <div class="banner-info text-center">
+                    <h1 class="banner-info__title">Your hard work is now made smarter</h1>
+                    <div class="banner-info__desc">
+                        <p class="text">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Pellen tesque liber out justo. </p>
+                        <a href="#" class="banner-info-link">
+                            Get Started Now 
+                            <i class="fa-solid fa-angles-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="banner-screen">
+                    <img src="./images/screen-2.png" alt="computer" class="banner-img computer">
+                </div>
+            </div>
+        </section>
+        <!-- ... -->
+        <div class="space-section"></div>
+        <!-- About -->
+        <section class="saas-about">
+            <div class="container">
+                <div class="content">
+                    <div class="top">
+                        <img src="./images/screen-5.png" alt="picture" class="content__img">
+                        <div class="desc">
+                            <div class="title-content">
+                                <h6 class="sub-title">About Us</h6>
+                                <h3 class="title">We make your spending stress-free for you to have the perfect control.</h3>
+                            </div>
+                            <p class="text">
+                                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                                ultrices in ligula. Semper at tempufddfel. Learn more about our work!
+                                Lorem ipsum viverra feugiat.
+                            </p>
+                            <ul class="icon-list">
+                                <li class="icon-list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    Get setup quickly
+                                </li>
+                                <li class="icon-list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    Built for collaboration
+                                </li>
+                            </ul>
+                            <a href="#" class="btn">
+                                More Services
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bottom">
+                        <img src="./images/screen-6.png" alt="picture" class="content__img">
+                        <div class="desc">
+                            <div class="title-content">
+                                <h6 class="sub-title">Simple & Secured</h6>
+                                <h3 class="title">We bring solutions to make life easier for our customers</h3>
+                            </div>
+                            <p class="text">
+                                Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+                                ultrices in ligula. Semper at tempufddfel. Learn more about our work!
+                                Lorem ipsum viverra feugiat.
+                            </p>
+                            <ul class="icon-list">
+                                <li class="icon-list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    Get setup quickly
+                                </li>
+                                <li class="icon-list-item">
+                                    <i class="fa-solid fa-check"></i>
+                                    Built for collaboration
+                                </li>
+                            </ul>
+                            <a href="#" class="btn">
+                                More Services
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- features -->
+        <section class="saas-feature">
+            <div class="content-main">
+                <div class="container">
+                    <div class="content-info">
+                        <div class="content-left">
+                            <h5 class="sub-title">What We Offer</h5>
+                            <h3 class="title">Make your projects faster</h3>
+                            <p class="text">
+                                We are here to help the customers to get their success. Lorem ipsum dolor sit amet, consectetur elit.
+                                Nemo sit eos, quod minus eius illo labore.Lorem ipsum dolor sit amet, 
+                                Ea consequuntur illum facere aperiam sequi optio adipisicing.
+                            </p>
+                            <div class="feature-btn">
+                                <a href="#" class="read-more btn">
+                                    Read More
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </a>
+                                <a href="#" class="contact btn">
+                                    Contact Us
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="content-right">
+                            <div class="content-right-grids">
+                                <div class="icon">
+                                    <i class="fa-solid fa-hand-sparkles"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title">
+                                        <a href="#">Easily Manage Your Works.</a> 
+                                    </h6>
+                                    <p class="text">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="content-right-grids">
+                                <div class="icon">
+                                    <i class="fa-regular fa-clock"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title">
+                                        <a href="#">24x7 Access.</a> 
+                                    </h6>
+                                    <p class="text">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio adipisicing.</p>
+                                </div>
+                            </div>
+                            <div class="content-right-grids">
+                                <div class="icon">
+                                    <i class="fa-regular fa-comments"></i>
+                                </div>
+                                <div class="content">
+                                    <h6 class="title">
+                                        <a href="#">Great Community</a>
+                                    </h6>
+                                    <p class="text">Lorem ipsum dolor sit amet,Ea consequuntur illum facere aperiam sequi optio adipisicing.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- What we do -->
+        <section class="saas-wwd">
+            <div class="container">
+                <div class="header text-center">
+                    <h5 class="sub-title">What We Do</h5>
+                    <h3 class="title">We Grow Your Business</h3>
+                </div>
+                <div class="content text-center">
+                    <div class="wwd-item">
+                        <div class="wwd-item-info">
+                            <a href="#" class="wwd-link">
+                                <img src="./images/banner1.jpg" alt="Graphic Design" class="wwd-img">
+                            </a>
+                            <div class="wwd-info">
+                                <h5 class="title">
+                                    <a href="#">Graphic Design</a>
+                                </h5>
+                                <p class="text"> 
+                                    Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wwd-item">
+                        <div class="wwd-item-info">
+                            <a href="#" class="wwd-link">
+                                <img src="./images/banner4.jpg" alt="Graphic Design" class="wwd-img">
+                            </a>
+                            <div class="wwd-info">
+                                <h5 class="title">
+                                    <a href="#">Digital</a>
+                                </h5>
+                                <p class="text"> 
+                                    Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wwd-item">
+                        <div class="wwd-item-info">
+                            <a href="#" class="wwd-link">
+                                <img src="./images/banner6.jpg" alt="Graphic Design" class="wwd-img">
+                            </a>
+                            <div class="wwd-info">
+                                <h5 class="title">
+                                    <a href="#">Branding</a>
+                                </h5>
+                                <p class="text"> 
+                                    Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+       <section class="saas-testimonials">
+            <div class="container">
+                <div class="content">
+                    <input type="radio" name="active-slide" id="radio1">
+                    <input type="radio" name="active-slide" id="radio2">
+                    <input type="radio" name="active-slide" id="radio3">
+                    <input type="radio" name="active-slide" id="radio4">
+                    <input type="radio" name="active-slide" id="radio5">
+                    <input type="radio" name="active-slide" id="radio6">
+                    <div class="item active">
+                        <blockquote>
+                            <q>
+                                <i class="fa-solid fa-quote-left"></i>
+                                Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore. Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore.
+                            </q>
+                        </blockquote>
+                        <div class="testi-desc">
+                            <h3>Dennis Wilson</h3>
+                            <p class="indentity">Customer</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <blockquote>
+                            <q>
+                                <i class="fa-solid fa-quote-left"></i>
+                                Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore. Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore.
+                            </q>
+                        </blockquote>
+                        <div class="testi-desc">
+                            <h3>Dennis Wilson</h3>
+                            <p class="indentity">Customer</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <blockquote>
+                            <q>
+                                <i class="fa-solid fa-quote-left"></i>
+                                Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore. Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore.
+                            </q>
+                        </blockquote>
+                        <div class="testi-desc">
+                            <h3>Dennis Wilson</h3>
+                            <p class="indentity">Customer</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <blockquote>
+                            <q>
+                                <i class="fa-solid fa-quote-left"></i>
+                                Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore. Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore.
+                            </q>
+                        </blockquote>
+                        <div class="testi-desc">
+                            <h3>Dennis Wilson</h3>
+                            <p class="indentity">Customer</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <blockquote>
+                            <q>
+                                <i class="fa-solid fa-quote-left"></i>
+                                Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore. Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore.
+                            </q>
+                        </blockquote>
+                        <div class="testi-desc">
+                            <h3>Dennis Wilson</h3>
+                            <p class="indentity">Customer</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <blockquote>
+                            <q>
+                                <i class="fa-solid fa-quote-left"></i>
+                                Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore. Lorem ipsum dolor sit amet int consectetur
+                                adipisicing elit. Velita beatae
+                                laudantium Quas minima sunt natus tempore.
+                            </q>
+                        </blockquote>
+                        <div class="testi-desc">
+                            <h3>Dennis Wilson</h3>
+                            <p class="indentity">Customer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimo-btn">
+                    <label for="radio1"></label>
+                    <label for="radio2"></label>
+                    <label for="radio3"></label>
+                    <label for="radio4"></label>
+                    <label for="radio5"></label>
+                    <label for="radio6"></label>
+                </div>
+            </div>
+       </section>
+       <!-- Blog -->
+       <section class="blog">
+            <div class="container">
+                <div class="content">
+                    <div class="blog-post">
+                        <h6 class="sub-title">Blog posts</h6>
+                        <h3 class="title">
+                            Checkout our latest news, blog posts and Updates
+                        </h3>
+                        <p class="text">Integer pulvinar leo id. libero ut justo, semper at
+                            tempus vel, ultrices ipsum ligula. Nullae sollicit udin velit. semper at vel.
+                        </p>
+                        <div class="author-info">
+                            <div class="author-img">
+                                <img src="./images/team4.jpg" alt=".">
+                            </div>
+                            <img src="./images/signature.png" alt="signature" class="signature">
+                        </div>
+                    </div>
+                    <div class="blog-info">
+                        <div class="card">
+                            <a href="#">
+                                <img src="./images/g5.jpg" alt="gp5">
+                            </a>
+                            <div class="desc">
+                                <h5 class="title">
+                                    <a href="#">Global equity report 2020</a>
+                                </h5>
+                                <ul class="admin-post">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-user"></i>
+                                            by Admin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <i class="fa-regular fa-clock"></i>
+                                            Oct 31, 2020
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-regular fa-comments"></i>
+                                            3
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="text">
+                                    Nulla eu elementum quam. magna purus, nec. semper at vel,
+                                    ipsum dolor et init.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog-info">
+                        <div class="card">
+                            <a href="#">
+                                <img src="./images/g7.jpg" alt="gp5">
+                            </a>
+                            <div class="desc">
+                                <h5 class="title">
+                                    <a href="#">Development of products</a>
+                                </h5>
+                                <ul class="admin-post">
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-solid fa-user"></i>
+                                            by Admin
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <i class="fa-regular fa-clock"></i>
+                                            Oct 31, 2020
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <i class="fa-regular fa-comments"></i>
+                                            3
+                                        </a>
+                                    </li>
+                                </ul>
+                                <p class="text">
+                                    Nulla eu elementum quam. magna purus, nec. semper at vel,
+                                    ipsum dolor et init.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <!-- faq -->
+       <section class="saas-faq">
+            <div class="container">
+                <div class="title-content text-center">
+                    <h6 class="sub-title">Find out more</h6>
+                    <h3 class="title">Frequently asked questions</h3>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <div class="accordion-faq">
+                            <div class="accordion-item">
+                                <button class="accordion-btn">
+                                    <span class="title">How much does
+                                        a static website cost?
+                                    </span>
+                                    <i class="fa-solid fa-minus js-icon-faq icon"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-btn">
+                                    <span class="title">How to choose a best web template?
+                                    </span>
+                                    <i class="fa-solid fa-plus js-icon-faq icon"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-btn">
+                                    <span class="title">How to download a template?
+                                    </span>
+                                    <i class="fa-solid fa-plus js-icon-faq icon"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <button class="accordion-btn">
+                                    <span class="title">Why should i choose a free template?
+                                    </span>
+                                    <i class="fa-solid fa-plus js-icon-faq icon"></i>
+                                </button>
+                                <div class="accordion-content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <div class="content-img">
+                            <img src="./images/ab2.jpg" alt="ab2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <!-- Pricing -->
+       <section class="saas-pricing">
+            <div class="container">
+                <div class="row-pricing">
+                    <div class="item our">
+                        <div class="title-content">
+                            <h6 class="sub-title">Our Pricing</h6>
+                            <h3 class="title">We offer great prices, premium and quality products for your business.</h3>
+                            <p class="text">We are here to help the customers to get their success. Lorem ipsum dolor sit amet,
+                                consectetur elit. Nemo sit eos, quod
+                                minus eius illo labore.</p>
+                            <a href="#" class="pricing-btn">
+                                Get Started Now 
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="plan">
+                            <h3 class="title">Basic Plan</h3>
+                            <div class="price">
+                                <span class="dollar">$</span>
+                                <span class="amount">39</span>
+                                <span class="month">/mo</span>
+                                <p>One time purchase</p>
+                            </div>
+                            <ul class="pricinghny-inf">
+                                <li>1 Project</li>
+                                <li>100K API Access</li>
+                                <li>100MB Storage</li>
+                                <li>Custom Cloud Services</li>
+                                <li>Weekly Reports</li>
+                                <li>7/24 Support</li>
+                            </ul>
+                            <a href="#" class="plan-btn">
+                                Choose Plan 
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="plan">
+                            <h3 class="title">Basic Plan</h3>
+                            <div class="price">
+                                <span class="dollar">$</span>
+                                <span class="amount">99</span>
+                                <span class="month">/mo</span>
+                                <p>One time purchase</p>
+                            </div>
+                            <ul class="pricinghny-inf">
+                                <li>5 Project</li>
+                                <li>100K API Access</li>
+                                <li>200MB Storage</li>
+                                <li>Custom Cloud Services</li>
+                                <li>Weekly Reports</li>
+                                <li>7/24 Support</li>
+                            </ul>
+                            <a href="#" class="plan-btn">
+                                Choose Plan 
+                                <i class="fa-solid fa-angles-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+       <footer class="saas-footer">
+            <div class="container">
+                <div class="content">
+                    <div class="content-info">
+                        <div class="item">
+                            <h6>Contact Us</h6>
+                            <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo.</p>
+                            <ul>
+                                <li><a href="mailto:support@manycorp.com">support@manycorp.com</a></li>
+                                <li><a href="tel:+(21) 255 999 8888">+(21) 255 999 8888</a></li>
+                            </ul>
+                            <ul class="footers-social">
+                                <li><a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a></li>
+                                <li><a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                <li><a href="#" class="instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                              </ul>
+                        </div>
+                        <div class="item">
+                            <h6>Products</h6>
+                            <ul>
+                                <li><a href="#">Features</a></li>
+                                <li><a href="#">Pricing Plans</a></li>
+                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#">Help desk</a></li>
+                                <li><a href="#">Support</a></li>
+                              </ul>
+                        </div>
+                        <div class="item">
+                            <h6>Company</h6>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Join our team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Press release</a></li>
+                                <li><a href="#">Careers</a></li>
+                              </ul>
+                        </div>
+                        <div class="item">
+                            <h6>Subcribe Our Newsletter</h6>
+                            <div class="footer-form">
+                                <form action="" class="subscribe">
+                                    <input type="email" name="email" placeholder="Email Address" required>
+                                    <button class="btn-footer">Subscibe</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="container">
+                        <div class="copyright-gds">
+                            <div class="left">
+                                <p class="copy-footer">© 2021 ManyCorp. All rights reserved | Designed by <a href="https://w3layouts.com" target="_blank">W3layouts</a></p>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li><a href="#">Accessibilty</a></li>
+                                    <li><a href="#">Customer Service</a></li>
+                                  </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+    </div>
+
+ 
+    <!-- Scripts -->
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop()){
+                    $('header').addClass('sticky');
+                }else {
+                    $('header').removeClass('sticky');
+                }
+            });
+        });
+    </script>
+</body> 
+</html>

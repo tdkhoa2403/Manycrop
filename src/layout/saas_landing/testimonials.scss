@@ -1,0 +1,273 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+
+
+
+.saas-testimonials {
+    background: url(https://demo.w3layouts.com/demos_new/template_demo/17-04-2021/manycorp-liberty-demo_Free/491451703/web/assets/images/banner3.jpg);
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 4.8rem 0;
+    background-position: center;
+    &::before {
+        content: "";
+        background: rgb(0 0 0 / 75%);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 4.8rem 15px;
+        padding-bottom: 0;
+        overflow: hidden;
+        @media screen and (min-width: 576px) {
+            max-width: 520px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1140px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1200px;
+        }
+        .content {
+            width: 310%;
+            @media screen and (max-width: 992px) {
+                width: 600%;
+            }
+            @include flex($justify: flex-start);
+            input[type="radio"] {
+                display: none;
+            }
+            .active {
+                transition: 1s;
+            }
+            >div.item {
+                max-width: 585px;
+                margin-right: 20px;
+                padding: 0 2.8rem;
+                margin-bottom: 3.2rem;
+                @media screen and (max-width: 1280px) {
+                    max-width: 554px;
+                }
+                @media screen and (max-width: 1200px) {
+                    max-width: 460px;
+                }
+                @media screen and (max-width: 992px) {
+                    max-width: 16.66667%;
+                }
+                blockquote {
+                    margin: 0 0 1.6rem;
+                    q {
+                        color: $white-color;
+                        opacity: 0.9;
+                        font-size: calc($fz-text + 4px);
+                        line-height: 28px;
+                        &::before {
+                            content: "";
+                            display: none;
+                        }
+                        i {
+                            font-size: 30px;
+                            color: $secondary-color;
+                            display: inline-block;
+                            margin-right: 6px;
+                        }
+                    }
+                }
+                .testi-desc {
+                    margin-top: 30px;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-gap: 0px;
+                    border-top: none;
+                    h3 {
+                        font-size: calc($fz-text + 4px);
+                        font-weight: 700;
+                        color: $white-color;
+                        line-height: 1.2;
+                    }
+                    .indentity {
+                        font-size: calc($fz-text + 2px);
+                        color: $white-color;
+                        font-style: normal;
+                        opacity: 0.8;
+                        line-height: 28px;
+                    }
+                }
+            }
+            #radio1:checked ~ .active {
+                margin-left: 0;
+                transition: .5s ease;
+            }
+            #radio2:checked ~ .active {
+                margin-left: -33.333%;
+                transition: .5s ease;
+            }
+            #radio3:checked ~ .active {
+                margin-left: -66.666%;
+                transition: .5s ease;
+            }
+            @media screen and (max-width: 992px) {
+                #radio1:checked ~ .active {
+                    margin-left: 0;
+                    transition: .3s ease;
+                }
+                #radio2:checked ~ .active {
+                    margin-left: -710px;
+                    transition: .3s ease;
+                }
+                #radio3:checked ~ .active {
+                    margin-left: -1420px;
+                    transition: .3s ease;
+                }
+                #radio4:checked ~ .active {
+                    margin-left: -2130px;
+                    transition: .3s ease;
+                }
+                #radio5:checked ~ .active {
+                    margin-left: -2840px;
+                    transition: .3s ease; 
+                }
+                #radio6:checked ~ .active {
+                    margin-left: -3550px;
+                    transition: .3s ease;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                #radio1:checked ~ .active {
+                    margin-left: 0;
+                }
+                #radio2:checked ~ .active {
+                    margin-left: -510px;
+                }
+                #radio3:checked ~ .active {
+                    margin-left: -1020px;
+                }
+                #radio4:checked ~ .active {
+                    margin-left: -1530px;
+                }
+                #radio5:checked ~ .active {
+                    margin-left: -2040px;
+                }
+                #radio6:checked ~ .active {
+                    margin-left: -2550px;
+                }
+            }
+            @media screen and (max-width: 576px) {
+                #radio1:checked ~ .active {
+                    margin-left: 0;
+                }
+                #radio2:checked ~ .active {
+                    margin-left: -548px;
+                }
+                #radio3:checked ~ .active {
+                    margin-left: -1096px;
+                }
+                #radio4:checked ~ .active {
+                    margin-left: -1644px;
+                }
+                #radio5:checked ~ .active {
+                    margin-left: -2192px;
+                }
+                #radio6:checked ~ .active {
+                    margin-left: -2740px;
+                }
+            }
+            @media screen and (max-width: 540px) {
+                #radio1:checked ~ .active {
+                    margin-left: 0;
+                }
+                #radio2:checked ~ .active {
+                    margin-left: -510px;
+                }
+                #radio3:checked ~ .active {
+                    margin-left: -1020px;
+                }
+                #radio4:checked ~ .active {
+                    margin-left: -1534px;
+                }
+                #radio5:checked ~ .active {
+                    margin-left: -2050px;
+                }
+                #radio6:checked ~ .active {
+                    margin-left: -2555px;
+                }
+            }
+            @media screen and (max-width: 500px) {
+                #radio1:checked ~ .active {
+                    margin-left: 0;
+                }
+                #radio2:checked ~ .active {
+                    margin-left: -470px;
+                }
+                #radio3:checked ~ .active {
+                    margin-left: -945px;
+                }
+                #radio4:checked ~ .active {
+                    margin-left: -1415px;
+                }
+                #radio5:checked ~ .active {
+                    margin-left: -1885px;
+                }
+                #radio6:checked ~ .active {
+                    margin-left: -2360px;
+                }
+            }
+        }
+        .testimo-btn {
+            position: absolute;
+            width: 1200px;
+            height: 30px;
+            @include flex($justify: center);
+            label {
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: rgba($color: #ffffff, $alpha: 0.7);
+                margin: 0 7px;
+                &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+                    display: none;
+                    @media screen and (max-width: 992px) {
+                        display: block;
+                    }
+                }
+                &:hover {
+                    background-color: #fff;
+                }
+            }
+            @media screen and (max-width: 1280px) {
+                width: 1140px;
+            }
+            @media screen and (max-width: 1200px) {
+                width: 960px;
+            }
+            @media screen and (max-width: 992px) {
+                width: 720px;
+            }
+            @media screen and (max-width: 768px) {
+                width: 520px;
+            }
+            @media screen and (max-width: 576px) {
+                width: 483px;
+            }
+        }
+    }
+}

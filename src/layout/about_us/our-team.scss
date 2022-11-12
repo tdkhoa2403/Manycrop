@@ -1,0 +1,196 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+.our-team {
+    background-color: $bg-color;
+    padding: 4.8rem 0;
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2.4rem 15px;
+        @media screen and (min-width: 576px) {
+            max-width: 540px;
+        }
+        @media screen and (min-width: 768px) {
+            max-width: 720px;
+        }
+        @media screen and (min-width: 992px) {
+            max-width: 960px;
+        }
+        @media screen and (min-width: 1200px) {
+            max-width: 1140px;
+        }
+        @media screen and (min-width: 1280px) {
+            max-width: 1200px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            .sec-des {
+                position: relative;
+                width: 100%;
+                padding: 0 15px;
+                text-align: left;
+                .title-content {
+                    .title {
+                        margin-bottom: 1.6rem;
+                        color: $white-color;
+                        @media screen and (max-width: 1080px) {
+                            font-size: 32px;
+                            line-height: 40px;
+                        }
+                    }
+                    p {
+                        font-size: calc($fz-text + 4px);
+                        line-height: 28px;
+                        color: $text-color;
+                    }
+                    .our-btn {
+                        margin-top: 2.4rem;
+                        color: $white-color;
+                        background-color: $primary-color;
+                        border-color: $primary-color;
+                        @media screen and (min-width: 992px) {
+                        margin-top: 4.8rem;
+                        }
+                        &:hover {
+                            opacity: .8;
+                        }
+                    }
+                }
+                @media screen and (min-width: 992px) {
+                    padding-left: 4.8rem;
+                }
+                @media screen and (min-width: 768px) {
+                    margin-top: 4.8rem;
+                    flex: 0 0 50%;
+                    max-width: 50%;
+                }
+            }
+            .item {
+                margin-top: 4.8rem;
+                position: relative;
+                width: 100%;
+                padding-right: 15px;
+                padding-left: 15px;
+                flex: 0 0 50%;
+                max-width: 50%;
+                .team-grids {
+                    position: relative;
+                    overflow: hidden;
+                    z-index: 1;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        width: 100%;
+                        border-radius: $boder-radius;
+                        z-index: 100;
+                    }
+                    &:hover .team-info {
+                        bottom: 0;
+                    }
+                    .team-info {
+                        position: absolute;
+                        bottom: -227px;
+                        margin: 0;
+                        padding: 2em 0;
+                        transition: .5s;
+                        width: 100%;
+                        text-align: center;
+                        border-bottom-left-radius: 10px;
+                        border-bottom-right-radius: 10px;
+                        .social-icon {
+                            padding: 10px;
+                            margin-top: 10px;
+                            @include flex($justify: center);
+                            gap: 5px;
+                            a {
+                                border-radius: 50px;
+                                display: inline-block;
+                                width: 40px;
+                                height: 40px;
+                                line-height: 40px;
+                                text-align: center;
+                                color: #fff;
+                                margin: 0 2px;
+                                @include flex($justify: center);
+                                i {
+                                    font-size: $fz-button;
+                                }
+                                &:hover {
+                                    opacity: .9;
+                                }
+                            }
+                            a.fb {
+                                background: #3b5998
+                            }
+                            a.twt {
+                                background: #1da1f2
+                            }
+                        }
+                    }
+                }
+                h4 {
+                    font-size: 22px;
+                    line-height: 30px;
+                    font-weight: 700;
+                    text-transform: capitalize;
+                    margin-top: 20px;
+                    color: #eee;
+                }
+                h6 {
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: $text-color;
+                    font-weight: 400;
+                }
+                @media screen and (min-width: 768px) {
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                }
+            }
+        }
+        .stats-section {
+            @include flex($justify: center);
+            flex-wrap: wrap;
+            margin: 0 -15px;
+            @media screen and (min-width: 992px) {
+                padding-top: 2.4rem;
+            }
+            @media screen and (min-width: 768px) {
+                margin-top: 4.8rem;
+            }
+            .stats-info {
+                text-align: left;
+                padding: 0 30px;
+                flex: 0 0 50%;
+                max-width: 50%;
+                @media screen and (min-width: 992px) {
+                    flex: 0 0 25%;
+                    max-width: 25%;
+                }
+                p.counter {
+                    font-size: 60px;
+                    font-weight: 700;
+                    color: #eee;
+                    margin: 30px 0;
+                    line-height: 28px;
+                    @media screen and (max-width: 1080px) {
+                        font-size: 40px;
+                    }
+                }
+                h3 {
+                    font-size: 20px;
+                    line-height: 30px;
+                    margin-bottom: 15px;
+                    font-weight: 700;
+                    color: $primary-color;
+                    display: inline-block;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

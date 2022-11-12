@@ -1,0 +1,151 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+
+.saas-about {
+    background-color: $bg-color;
+    padding-top: 4.8rem;
+    @media screen and (min-width: 576px) {
+        padding-top: 0;
+    }
+    .container {
+        padding: 4.8rem 0;
+        @media screen and (min-width: 992px) {
+            padding-top: 4.8rem;
+        }
+        @media screen and (max-width: 992px) {
+            padding-top: 0;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4.8rem 15px;
+            @media screen and (max-width: 576px) {
+                max-width: 450px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 576px) {
+                max-width: 540px;
+            }
+            @media screen and (min-width: 768px) {
+                max-width: 720px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 992px) {
+                max-width: 960px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 1080px) {
+                max-width: 1040px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 1200px) {
+                max-width: 1140px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 1280px) {
+                max-width: 1200px;
+            }
+            .top,.bottom {
+                padding-top: 4.8rem;
+                margin-top: 4.8rem;
+                @include flex($justify: space-between);
+                align-items: flex-start;
+                @media screen and (max-width: 992px) {
+                    flex-wrap: wrap;
+                }
+                .content__img {
+                    max-width: 50%;
+                    height: auto;
+                    padding: 0 4.8rem 0 1.5rem;
+                    @media screen and (max-width: 992px) {
+                        max-width: 100%;
+                    }
+                }
+                .desc {
+                    padding: 0 1.5rem 0 4.8rem;
+                    max-width: 50%;
+                    @media screen and (max-width: 992px) {
+                        max-width: 100%;
+                        padding: 0 15px;
+                    }
+                    .title-content {
+                        text-align: left;
+                        .title {
+                                margin-bottom: 2.4rem;
+                                color: #eee;
+                                @media screen and (max-width: 1080px) {
+                                    font-size: 32px;
+                                    line-height: 40px;
+                                }
+                        }
+                    }
+                    .text {
+                        padding-right: 4.8rem;
+                        font-size: calc($fz-text + 4px);
+                        line-height: 28px;
+                        color: $text-color;
+                    }
+                    .icon-list {
+                        display: flex;
+                        margin-top: 2.4rem;
+                        &-item {
+                            display: block;
+                            margin-right: 3rem;
+                            font-size: calc($fz-text + 4px);
+                            color: $text-color;
+                            i {
+                                color: $primary-color;
+                                font-size: $fz-text;
+                                margin-right: 4px;
+                            }
+                        }
+                    }
+                    .btn {
+                        padding: 10px 30px;
+                        font-size: $fz-button;
+                        line-height: 30px;
+                        font-weight: 600;
+                        transition: .3s ease-in;
+                        border-radius: 6px;
+                        margin-top: 4.8rem;
+                        text-align: center;
+                        background-color: transparent;
+                        border: 1px solid transparent;
+                        cursor: pointer;
+                        color: $primary-color;
+                        border-color: $primary-color;   
+                        display: inline-block;
+                        i {
+                            font-size: $fz-text;
+                            margin-left: 5px;
+                        }
+                        &:hover {
+                            background-color: $primary-color;
+                            color: $white-color;
+                        }
+                    }
+                }
+                
+            }
+            .bottom {
+                flex-direction: row-reverse;
+                .content__img {
+                    padding: 0 1.5rem 0 4.8rem;
+                    @media screen and (max-width: 992px) {
+                        max-width: 100%;
+                    }
+                }
+                .desc {
+                    padding: 0 4.8rem 0 1.5rem;
+                    @media screen and (max-width: 992px) {
+                        max-width: 100%;
+                        padding: 0 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,106 @@
+@import "../../base/";
+@import "../../helpers/";
+
+
+
+.contact-main {
+    background-color: $bg-color;
+    padding: 4.8rem 0;
+    margin-top: 80px;
+    .contact {
+        padding: 2.4rem 0;
+        .container {
+            width: 100%;
+            padding: 0 15px;
+            margin: 0 auto;
+            @media screen and (min-width: 576px) {
+                max-width: 540px;
+            }
+            @media screen and (min-width: 768px) {
+                max-width: 720px;
+            }
+            @media screen and (min-width: 992px) {
+                max-width: 960px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 1200px) {
+                max-width: 1140px;
+                margin: 0 auto;
+            }
+            @media screen and (min-width: 1280px) {
+                max-width: 1200px;
+            }
+            .title-content {
+                margin-bottom: 2.4rem;
+                @media screen and (min-width: 768px) {
+                    margin-bottom: 4.8rem;
+                }
+                .title {
+                    @media screen and (min-width: 992px) {
+                        margin: 0 4.8rem;
+                    }
+                }
+                .text {
+                    margin-top: 0.8rem;
+                    font-size: 18px;
+                    line-height: 28px;
+                    color: $text-color;
+                }
+            }
+            .contact-info {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -15px;
+                .item {
+                    position: relative;
+                    width: 100%;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    @media screen and (min-width: 768px) {
+                        flex: 0 0 50%;
+                        max-width: 50%;
+                    }
+                    @media screen and (min-width: 992px) {
+                        padding-right: 4.8rem;
+                        flex: 0 0 33.33333%;
+                        max-width: 33.33333%;
+                    }
+                    &:nth-child(2), &:nth-child(3) {
+                        margin-top: 2.4rem;
+                        @media screen and (min-width: 768px) {
+                            margin-top: 0;
+                        }
+                    }
+                    &:nth-child(3) {
+                        margin-top: 2.4rem !important;
+                    }
+                    .box-contact-info {
+                        display: grid;
+                        grid-template-columns: auto 1fr;
+                        grid-gap: 20px;
+                        .icon-box i {
+                            font-size: 40px;
+                            color: $primary-color;
+                            font-weight: 900;
+                        }
+                        .text-box {
+                            h3 {
+                                font-size: 22px;
+                                font-weight: 600;
+                                margin-bottom: 0.8rem;
+                            }
+                            p, a {
+                                font-size: 18px;
+                                line-height: 28px;
+                                color: $text-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
